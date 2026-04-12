@@ -17,7 +17,6 @@ public class RunService : IRunService
     public void RunTask1()
     {
 
-        Console.WriteLine("Hello, World!");
         Console.WriteLine("ЛАБОРАТОРНАЯ РАБОТА 1 ЗАДАНИЕ 1 ВАРИАНТ 3"); 
 
         var p1 = new RGBAPixel(1,2,3,0.9);
