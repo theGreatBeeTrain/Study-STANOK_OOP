@@ -28,23 +28,29 @@ public class RunService : IRunService
     /// </summary>
     public void RunTask3()
     {
+
+        Console.WriteLine("ЛАБОРАТОРНАЯ РАБОТА 1 ЗАДАНИЕ 3");
+
+
+        Console.WriteLine(" Дерево без детей");
         Tree t1 = new Tree(1);
         t1.print();
-        Console.WriteLine("================================");
+
+        Console.WriteLine(" Дерево с одним слоем детей ");
         List<double> l1 = new List<double> { 1, 2, 3, 4 };
         Tree t2 = new Tree(312, 4, l1);
         t2.print();
-        Console.WriteLine("================================");
 
+        Console.WriteLine("Дерево с двумя слоями детей");
         List<Tree> l2 = new List<Tree> { t1, t2, (Tree)3.0, (Tree)4 };
         Tree t3 = new Tree(12, 4, l2);
         t3.print();
-        Console.WriteLine("================================");
 
+        Console.WriteLine("Древо с тремя слоями детей");
         List<Tree> l3 = new List<Tree> { t2, t2, (Tree)3.0, t3 };
         Tree t4 = new Tree(99999, 4, l3);
         t4.print();
-        Console.WriteLine("================================");
+
 
     }
 }
