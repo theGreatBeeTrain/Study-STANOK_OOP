@@ -1,4 +1,5 @@
 using System.Diagnostics.Metrics;
+using Study.LabWork1.Features;
 using Study.LabWork1.Shared.Abstractions;
 
 namespace Study.LabWork1.Shared.Services;
