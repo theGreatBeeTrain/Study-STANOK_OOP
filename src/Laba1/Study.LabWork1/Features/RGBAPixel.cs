@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Text;
 
 namespace Study.LabWork1.Features
@@ -36,7 +37,8 @@ namespace Study.LabWork1.Features
 
         public String HexString()
         {
-            byte[] colors = new byte[] { Red, Green, Blue };
+
+            byte[] colors = new byte[] { Red, Green, Blue, Convert.ToByte(Math.Truncate(Alpha * 255)) };
             return Convert.ToHexString(colors);
 
         }

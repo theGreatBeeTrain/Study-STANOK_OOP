@@ -25,59 +25,32 @@ public class RunService : IRunService
         var p4 = new RGBAPixel(123.456,0.13,256.257,0.65);
         var p5 = new RGBAPixel(-13.8,11.1,79,0.6);
 
+        Console.WriteLine("Созданные пиксели (Результат ToString())");
         Console.WriteLine(p1);
         Console.WriteLine(p2);
         Console.WriteLine(p3);
         Console.WriteLine(p4);
         Console.WriteLine(p5);
 
-        Console.Write(p1);
-        Console.Write(" + ");
-        Console.Write(p4);
-        Console.Write(" = ");
-        Console.WriteLine(p1 + p4);
+        Console.WriteLine("Пиксели, преобразованные в hex код");
+        Console.WriteLine(p1.HexString());
+        Console.WriteLine(p2.HexString());
+        Console.WriteLine(p3.HexString());
+        Console.WriteLine(p4.HexString());
+        Console.WriteLine(p5.HexString());
 
-        Console.Write(p4);
-        Console.Write(" - ");
-        Console.Write(p1);
-        Console.Write(" = ");
-        Console.WriteLine(p4 - p1);
+        Console.WriteLine("Перегрузки операторов");
+        Console.WriteLine(p1 + " + " + p4 + " -> " + (p1 + p4));
+        Console.WriteLine(p4 + " - " + p1 + " -> " + (p4 - p1));
+        Console.WriteLine(p1 + " * " + p4 + " -> " + (p1 * p4));
+        Console.WriteLine(p1 + " * " + 389 + " -> " + (p1 * 389));
+        Console.WriteLine(p1 + " / " + 2 + " -> " + (p1 / 2));
+        Console.WriteLine(p1 + " == " + p2 + " -> " + (p1 == p2));
+        Console.WriteLine(p1 + " == " + p1 + " -> " + (p1 == p1));
+        Console.WriteLine(p1 + " != " + p2 + " -> " + (p1 != p2));
 
-        Console.Write(p1);
-        Console.Write(" * ");
-        Console.Write(p4);
-        Console.Write(" = ");
-        Console.WriteLine(p1 * p4);
 
-        Console.Write(p1);
-        Console.Write(" * ");
-        Console.Write(389);
-        Console.Write(" = ");
-        Console.WriteLine(p1 * 389);
 
-        Console.Write(p1);
-        Console.Write(" / ");
-        Console.Write(2);
-        Console.Write(" = ");
-        Console.WriteLine(p1 / 2);
-
-        Console.Write(p1);
-        Console.Write(" == ");
-        Console.Write(p2);
-        Console.Write(" = ");
-        Console.WriteLine(p1 == p2);
-
-        Console.Write(p1);
-        Console.Write(" == ");
-        Console.Write(p1);
-        Console.Write(" = ");
-        Console.WriteLine(p1 == p1);
-
-        Console.Write(p1);
-        Console.Write(" != ");
-        Console.Write(p2);
-        Console.Write(" = ");
-        Console.WriteLine(p1 != p2);
 
     }
 
