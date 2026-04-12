@@ -1,6 +1,5 @@
 using System.Diagnostics.Metrics;
 using Study.LabWork1.Shared.Abstractions;
-using Study.LabWork1.Features;
 
 namespace Study.LabWork1.Shared.Services;
 
@@ -80,6 +79,7 @@ public class RunService : IRunService
         Console.WriteLine(p1 != p2);
 
     }
+
     /// <summary>
     /// Задание 2
     /// </summary>
