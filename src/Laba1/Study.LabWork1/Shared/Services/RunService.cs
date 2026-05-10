@@ -1,4 +1,5 @@
 using System.Diagnostics.Metrics;
+using Study.LabWork1.Features;
 using Study.LabWork1.Shared.Abstractions;
 
 namespace Study.LabWork1.Shared.Services;
@@ -13,7 +14,46 @@ public class RunService : IRunService
     /// <summary>
     /// Задание 1
     /// </summary>
-    public void RunTask1() => throw new NotImplementedException();
+    public void RunTask1()
+    {
+
+        Console.WriteLine("ЛАБОРАТОРНАЯ РАБОТА 1 ЗАДАНИЕ 1 ВАРИАНТ 3"); 
+
+        var p1 = new RGBAPixel(1,2,3,0.9);
+        var p2 = new RGBAPixel(-1,-2,-3,-4);
+        var p3 = new RGBAPixel(9999,12345,9001,42069);
+        var p4 = new RGBAPixel(123.456,0.13,256.257,0.65);
+        var p5 = new RGBAPixel(-13.8,11.1,79,0.6);
+
+        Console.WriteLine("Созданные пиксели (Результат ToString())");
+        Console.WriteLine(p1);
+        Console.WriteLine(p2);
+        Console.WriteLine(p3);
+        Console.WriteLine(p4);
+        Console.WriteLine(p5);
+
+        Console.WriteLine("Пиксели, преобразованные в hex код");
+        Console.WriteLine(p1.HexString());
+        Console.WriteLine(p2.HexString());
+        Console.WriteLine(p3.HexString());
+        Console.WriteLine(p4.HexString());
+        Console.WriteLine(p5.HexString());
+
+        Console.WriteLine("Перегрузки операторов");
+        Console.WriteLine(p1 + " + " + p4 + " -> " + (p1 + p4));
+        Console.WriteLine(p4 + " - " + p1 + " -> " + (p4 - p1));
+        Console.WriteLine(p1 + " * " + p4 + " -> " + (p1 * p4));
+        Console.WriteLine(p1 + " * " + 389 + " -> " + (p1 * 389));
+        Console.WriteLine(p1 + " / " + 2 + " -> " + (p1 / 2));
+        Console.WriteLine(p1 + " == " + p2 + " -> " + (p1 == p2));
+        Console.WriteLine(p1 + " == " + p1 + " -> " + (p1 == p1));
+        Console.WriteLine(p1 + " != " + p2 + " -> " + (p1 != p2));
+
+
+
+
+    }
+
     /// <summary>
     /// Задание 2
     /// </summary>
